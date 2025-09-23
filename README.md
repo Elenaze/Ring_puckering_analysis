@@ -8,7 +8,7 @@ The tools for the analysis were used in the article: "The role of non-covalent i
 This analysis characterizes 6-membered rings (in our case cyclic dipeptides, DKPs) by computing the spherical polar set from the Cremer-Pople coordinates.
 
 - **Total puckering amplitude (Q)**: Overall degree of ring puckering
-- **Spherical polar coordinates (θ, φ)**: Angular parameters describing puckering geometry. $\theta$ is the polar angle ($0 \,\leq \theta \leq \pi$ ) and $\phi$ is the azimuthal one ($0 \,\leq \phi \leq \mathrm{2}\pi$). 
+- **Spherical polar coordinates (θ, φ)**: Angular parameters describing puckering geometry. $\theta$ is the polar angle ($0 \leq \theta \leq \pi$ ) and $\phi$ is the azimuthal one ($0 \leq \phi \leq \mathrm{2}\pi$). 
 - **Conformation classification**: Assignment to standard ring conformations (Chair, Boat, Twist-Boat, etc.) is performed following:
 C. Haasnoot, “The conformation of six-membered rings described by puckering coordinates derived from endocyclic torsion angles,” Journal of the American Chemical Society 114, 882–887 (1992).
 
