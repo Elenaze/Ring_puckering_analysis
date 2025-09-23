@@ -61,9 +61,7 @@ def main() -> bool:
         sys.exit(1)
     
     # Setup paths
-    data_path = Path(sys.argv[1])
-    if not data_path.is_absolute():
-        data_path = SCRIPT_DIR.parent / data_path
+    data_path = SCRIPT_DIR / 'data'
     
     output_dir = SCRIPT_DIR / 'output'
     output_dir.mkdir(exist_ok=True)
