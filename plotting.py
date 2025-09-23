@@ -95,7 +95,9 @@ def plot_puckering_distribution(json_path: str, save_path: str = None):
                 r = theta
                 ax[1].plot(theta_rad, r, marker=style['marker'], markersize=5, alpha=0.1,
                            color=style['color'], linestyle='None', label=conformation)
-
+                
+    #Legend if needed uncomment the following lines
+    #--------------------------------------------
     #handles, labels = ax[1].get_legend_handles_labels()
     #by_label = dict(zip(labels, handles))
     #ax[1].legend(by_label.values(), by_label.keys(), loc='upper right', bbox_to_anchor=(1.15, 1.05))

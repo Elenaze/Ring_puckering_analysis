@@ -8,8 +8,6 @@ from plotting import plot_puckering_distribution
 
 # Get the directory containing main.py
 SCRIPT_DIR = Path(__file__).parent.absolute()
-# Get the root directory (one level up from SCRIPT_DIR)
-ROOT_DIR = SCRIPT_DIR.parent
 
 def print_summary(results):
     """
@@ -65,7 +63,7 @@ def main() -> bool:
     # Setup paths
     data_path = Path(sys.argv[1])
     if not data_path.is_absolute():
-        data_path = ROOT_DIR / data_path
+        data_path = SCRIPT_DIR.parent / data_path
     
     output_dir = SCRIPT_DIR / 'output'
     output_dir.mkdir(exist_ok=True)

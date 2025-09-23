@@ -79,11 +79,6 @@ output/
 *.png
 *.svg
 
-# Data files (uncomment if you don't want to include data in the repo)
-# data/
-# test_data/
-# *.xyz
-
 # Log files
 *.log
 *.out

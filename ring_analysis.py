@@ -133,7 +133,7 @@ def get_total_puckering_amplitude(amplitude):
 
 def get_spherical_polar_set_n6(amplitude, angle_deg):
     """
-    Compute Spherical Polar Parameters (Q, θ, φ)
+    Compute Spherical Polar Set (Q, θ, φ)
     Input: amplitude (numpy array), angle_deg (numpy array)
     Output: Q, theta_deg, phi_deg (floats)
     """
@@ -148,7 +148,7 @@ def get_spherical_polar_set_n6(amplitude, angle_deg):
 
 def conformation_haversine(amplitude, theta_deg, phi_deg):
     """
-    Classifies the ring conformation based on θ and φ values using haversine.
+    Classifies the ring conformation based on θ and φ values using haversine distance.
     Returns the conformation as a string.
     """
     theta_deg = theta_deg % 180  # Normalize theta to [0, 180]
