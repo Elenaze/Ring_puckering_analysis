@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use('Agg')  # Use Agg backend to avoid GUI issues
+
 import os
 import json
 import pandas as pd

@@ -1,0 +1,14 @@
+name: puckering-analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python>=3.9,<3.13
+  
+  # Core scientific computing
+  - numpy>=1.21.0
+  - pandas>=1.3.0
+  
+  # Visualization
+  - matplotlib>=3.5.0

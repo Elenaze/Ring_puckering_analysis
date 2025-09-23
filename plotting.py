@@ -114,5 +114,10 @@ def plot_puckering_distribution(json_path: str, save_path: str = None):
     if save_path:
         fig.savefig(save_path, bbox_inches='tight', transparent=True, dpi=300)
         print(f"Plot saved to: {save_path}")
-
-    plt.show()
+    
+    # Only show plot if not running in headless mode
+    import matplotlib
+    if matplotlib.get_backend() != 'Agg':
+        plt.show()
+    else:
+        plt.close(fig)  # Free memory when not showing

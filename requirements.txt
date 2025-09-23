@@ -1,0 +1,18 @@
+# Ring Puckering Analysis Dependencies
+# Core scientific computing
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# File I/O and utilities
+pathlib2>=2.3.0; python_version < "3.4"Analysis Dependencies
+# Core scientific computing
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
