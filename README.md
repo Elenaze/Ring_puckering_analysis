@@ -36,13 +36,14 @@ The following cyclic dipeptide systems are supported with predefined ring atom i
 
 ## Installation
 
-Ensure you have the required Python packages installed:
-
 ```bash
-pip install numpy pandas matplotlib pathlib
-```
+# Clone the repository
+git clone https://github.com/Elenaze/Puckering_analysis
+cd Puckering_analysis
 
-## Usage
+# Install dependencies
+pip install -r requirements.txt
+```
 
 ### Basic Usage
 
