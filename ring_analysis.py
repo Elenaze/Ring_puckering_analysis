@@ -133,19 +133,31 @@ def get_total_puckering_amplitude(amplitude):
 
 def get_spherical_polar_set_n6(amplitude, angle_deg):
     """
-    Compute Spherical Polar Set (Q, θ, φ)
-    Input: amplitude (numpy array), angle_deg (numpy array)
-    Output: Q, theta_deg, phi_deg (floats)
+    Compute spherical polar coordinates (Q, θ, φ) from puckering amplitudes
+    Input:
+    amplitude: array [q2, q3] where q2 is amplitude of m=2 mode, q3 is m=3
+    angle_deg: phase angles from GetRingPuckerCoords
+    Output:
+    Q: total puckering amplitude
+    theta_deg: angle between q3 axis and puckering vector [0, π]
+    phi_deg: azimuthal angle in q2 plane [0, 2π)
     """
     Q = np.sqrt(np.square(amplitude).sum())
-    q2 = amplitude[0]
-    q3 = amplitude[1]
+    q2 = amplitude[0]  # m=2 amplitude
+    q3 = amplitude[1]  # m=3 amplitude
     
-    theta_deg = np.degrees(np.arctan2(q2, q3))
-    phi_deg = angle_deg[0]
+    # Compute theta using arccos for [0, π] range
+    # Use clip to ensure numerical stability
+    eps = 1e-10  # Small number to avoid division by zero
+    if Q > eps:
+        cos_theta = np.clip(q3/Q, -1.0, 1.0)  # Ensure argument is in [-1, 1]
+        theta_deg = np.degrees(np.arccos(cos_theta))
+    else:
+        theta_deg = 0.0  # Default to 0 for nearly-planar rings
+        
+    phi_deg = angle_deg[0]  
     
     return Q, theta_deg, phi_deg
-
 def conformation_haversine(amplitude, theta_deg, phi_deg):
     """
     Classifies the ring conformation based on θ and φ values using haversine distance.
