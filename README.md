@@ -1,7 +1,7 @@
 # Ring Puckering Analysis
 
-This analysis tool is specifically designed for the conformational analysis of 6-membered rings. It provides specialized tools for analyzing the puckering parameters starting from .xyz files.
-The tools for the analysis were used in the article: "The role of non-covalent interaction in the chirality of diketopiperazine peptides with identical residues: a theoretical approach".
+This set of tools are specifically designed for the conformational analysis of 6-membered rings. It provides specialized functions and methods for analyzing the puckering parameters starting from .xyz files.
+The analysis was employed in the article: "The role of ring puckering and non-covalent interactions in the conformational chirality of 2,5-diketopiperazines with identical residues: A theoretical study".
 
 ## Overview
 
