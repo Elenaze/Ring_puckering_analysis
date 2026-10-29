@@ -1,5 +1,12 @@
 # Ring Puckering Analysis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23767160.svg)](https://doi.org/10.5281/zenodo.23767160)
+
+> **Version used in** E. Zerbato, T. Bürgi, A. F. Perez Mellor, *J. Chem. Phys.* **164**, 074302 (2026), [doi:10.1063/5.0320687](https://doi.org/10.1063/5.0320687):
+> release [v1.0](https://github.com/Elenaze/Ring_puckering_analysis/releases/tag/v1.0), archived on Zenodo, [doi:10.5281/zenodo.23767161](https://doi.org/10.5281/zenodo.23767161).
+> Data (DFT output and geometries): [doi:10.5281/zenodo.17416294](https://doi.org/10.5281/zenodo.17416294).
+
+
 This set of tools are specifically designed for the conformational analysis of 6-membered rings. It provides specialized functions and methods for analyzing the puckering parameters starting from .xyz files.
 The analysis was employed in the article: "The role of ring puckering and non-covalent interactions in the conformational chirality of 2,5-diketopiperazines with identical residues: A theoretical study".
 
@@ -38,8 +45,9 @@ The following cyclic dipeptide systems are supported with predefined ring atom i
 
 ```bash
 # Clone the repository
-git clone https://github.com/Elenaze/Puckering_analysis
-cd Puckering_analysis
+git clone https://github.com/Elenaze/Ring_puckering_analysis
+cd Ring_puckering_analysis
+
 
 # Install dependencies
 pip install -r requirements.txt
@@ -134,6 +142,26 @@ The script includes robust error handling for:
 - Unsupported system names
 - Invalid coordinate data
 - File I/O errors
+
+## How to cite
+
+If you use this code, please cite the article and the archived version of the code:
+
+- E. Zerbato, T. Bürgi, and A. F. Perez Mellor, "The role of ring puckering and non-covalent interactions in the conformational chirality of 2,5-diketopiperazines with identical residues: A theoretical study," *J. Chem. Phys.* **164**, 074302 (2026). https://doi.org/10.1063/5.0320687
+- Ring_puckering_analysis v1.0, Zenodo, https://doi.org/10.5281/zenodo.23767161
+
+```bibtex
+@article{zerbato2026role,
+  author  = {Zerbato, Elena and B{\"u}rgi, Thomas and Perez Mellor, Ariel F.},
+  title   = {The role of ring puckering and non-covalent interactions in the conformational chirality of 2,5-diketopiperazines with identical residues: A theoretical study},
+  journal = {J. Chem. Phys.},
+  volume  = {164},
+  pages   = {074302},
+  year    = {2026},
+  doi     = {10.1063/5.0320687}
+}
+```
+
 
 ## References
 
